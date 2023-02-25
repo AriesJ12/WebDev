@@ -45,11 +45,31 @@
                                     <a href = "#Chapt5">
                                         Chapter 5: Text Formatting
                                     </a>
+                                    <ul>
+                                        <br>
+                                        <li><a href="#bold">Bold</a></li>
+                                        <br>
+                                        <li><a href="#italic">Italic</a></li>
+                                        <br>
+                                        <li><a href="#underlined">Underlined</a></li>
+                                        <br>
+                                        <li><a href="#abbr">Abbreviation</a></li>
+                                        <br>
+                                        <li><a href="#InsDelStrick">Inserted, Deleted, or Stricken</a></li>
+                                        <br>
+                                        <li><a href="#SupSub">Superscript and Subscript</a></li>
+                                    </ul>
                                 </li><br>
                                 <li>
                                     <a href = "#Chapt6">
                                         Chapter 6: Anchors and Hyperlinks
                                     </a>
+                                    <ul>
+                                        <br>
+                                        <li><a href = "#6.1">6.1 Link to another site</a></li>
+                                        <br>
+                                        <li><a href = "#6.2">6.2 Link to an Anchor</a></li>
+                                    </ul>
                                 </li><br>
                                 <li>
                                     <a href = "#Chapt7">
@@ -445,7 +465,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 <!-- ======================================================================================== -->
                 <hr>
                 <br>
-                    <u><h2 align = "center">Bold</h2></u>
+                    <u><h2 align = "center" id = "bold">Bold</h2></u>
                     <br>
                     
                     To bold text, use the <strong>&lt;strong&gt;</strong> or <strong>&lt;b&gt;</strong> tags:<br>
@@ -464,7 +484,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 <hr>
                 <!-- ======================================================== -->
                 <br>
-                <h2 align = "center"><u>Italic</u></h2>
+                <h2 align = "center" id = "italic"><u>Italic</u></h2>
                 <br><br>
                 To italicize text, use the <b>&lt;em&gt;</b> or <b>&lt;i&gt</b>; tags:
                 <br><br>
@@ -498,7 +518,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 &lt;i&gt;: "I was forced to read <i>Romeo and Juliet</i> in high school.
                 <hr><br>
                 <!-- ============================================================== -->
-                <h2 align = "center"><u>Underlined</u></h2>
+                <h2 align = "center" id = "underlined"><u>Underlined</u></h2>
                 <br>
                 While the <b>&lt;u&gt;</b> element itself was deprecated in HTML 4, it
                 was reintroduced with alternate semantic meaning in HTML
@@ -509,7 +529,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 text.&lt;/p&gt;
                 <hr><br>
                 <!-- ===================================================== -->
-                <h2 align = "center"><u>Abbreviation</u></h2>
+                <h2 align = "center" id = "abbr"><u>Abbreviation</u></h2>
                 <br>
                 To mark some expression as an abbreviation, use
                 <b>&lt;abbr&gt;</b> tag:
@@ -525,7 +545,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 description of such abbreviation
                 <hr><br>
                 <!-- ======================================================= -->
-                <h2 align = "center"><u>Inserted, Deleted, or Stricken</u></h2>
+                <h2 align = "center" id="InsDelStrick"><u>Inserted, Deleted, or Stricken</u></h2>
                 <br>
                 To mark text as inserted, use the <b>&lt;ins> </b>tag:
 
@@ -541,7 +561,7 @@ spaces will     be removed by browsers&lt;/p&gt;
 
                 <hr><br>
                 <!-- ============================================================= -->
-                <h2 align = "center"><u>Superscript and Subscript</u></h2>
+                <h2 align = "center" id = "SupSub"><u>Superscript and Subscript</u></h2>
                 <br>
                 To offset text either upward or downward you can use the
                 tags <b>&lt;sup></b> and <b>&lt;sub>.</b>
@@ -699,7 +719,7 @@ spaces will     be removed by browsers&lt;/p&gt;
                 <hr>
                 <!-- =========================================================== -->
                 <p>
-                    <h2 align = "center"><u>6.1 Link to another site</u></h2> 
+                    <h2 align = "center" id = "6.1"><u>6.1 Link to another site</u></h2> 
                     
                     This is the basic use of the &lt;a&gt; (anchor
                     element) element:
@@ -716,10 +736,64 @@ spaces will     be removed by browsers&lt;/p&gt;
                     <br><br>
                     <a href="http://example.com/" target="_blank">Link to
                         example.com</a>
+                    <br><br><br>
+                    <hr>
+                    <!-- ============================================================= -->
+                    <h2 align = "center" id = "6.2"><u>6.2 Link to an anchor</u></h2>
+                    Anchors can be used to jump to specific tags on
+                    an HTML page. The tag can point to any
+                    element that has an id attribute. To learn more
+                    about IDs, visit the documentation about
+                    Classes and IDs. Anchors are mostly used to
+                    jump to a subsection of a page and are used in
+                    conjunction with header tags.
+                    <br><br>
+                    Suppose you've created a page <b>(page1.html)</b>
+                    on many topics:
+                    <br>
+                    &lt;h2>First topic&lt;/h2>
+                    <br>
+                    &lt;p>Content about the first topic&lt;/p>
+                    <br>
+                    &lt;h2>Second topic&lt;/h2>
+                    <br>
+                    &lt;p>Content about the second topic&lt;/p>
                     
-
-
+                    <br><br><br>
                     
+                    Once you have several sections, you may want to create a Table
+                    of Contents at the top of the page with quick-links
+
+                    (or bookmarks) to specific sections.
+                    <br>
+                    If you gave an id attribute to your topics, you could then link to
+                    them
+                    <br><br>
+                    <b>&lt;h2</b> id="Topic1">First topic<b>&lt;/h2></b>
+                    <br>
+                    <b>&lt;p></b>Content about the first topic<b>&lt;/p></b>
+                    <br>
+                    <b>&lt;h2</b> id="Topic2">Second topic<b>&lt;/h2></b>
+                    <br>
+                    <b> &lt;p></b>Content about the second topic<b>&lt;/p></b>
+                    
+                    <br><br>
+
+                    Now you can use the anchor in your table of contents:
+                    <br>
+                    <b>&lt;h1></b>Table of Contents<b>&lt;/h1></b>
+                    <br>
+                    <b>&lt;a href='#Topic1'></b>Click to jump to the First Topic<b>&lt;/a></b>
+                    <br>
+                    <b>&lt;a href='#Topic2'></b>Click to jump to the Second Topic<b>&lt;/a></b>
+                    <br><br>
+                    These anchors are also attached to the web page they're on
+                    (page1.html). So you can link across the site from one
+                    page to the other by referencing the page and anchor name.
+                    <br><br>
+                    Remember, you can always <b>&lt;a</b> href="page1.html#Topic1">look back
+                    in the First Topic<b>&lt;/a></b> for supporting information.
+
                     </p>
                     <br><br>
                     <a href = "#tableContents">Back to table of contents</a>
