@@ -103,7 +103,7 @@
                                             and enhancements.</td>
                                     </tr>
                                 </table>
-                                <h4>DIFFERENCES BETWEEN HTML 4 AND HTML 5</h4>
+                                <h3>DIFFERENCES BETWEEN HTML 4 AND HTML 5</h3>
                                 <ol>
                                     <li>HTML5 is a work in progress</li>
                                     <li>Simplified Syntax</li>
@@ -317,7 +317,7 @@
                         &lt;<b>h6</b>&gt; defines the least important heading.
                         
                         <br><br>
-                        <h4>Example Document: </h4>
+                        <h3>Example Document: </h3>
                         <br>
                         <img src = "https://i0.wp.com/www.tutorialbrain.com/wp-content/uploads/2018/10/heading-tag.png?fit=1920%2C1080&ssl=1" alt = "h1 to h6 picture" width = "400px" height = "250px">
                     </p>
@@ -444,8 +444,9 @@ spaces will     be removed by browsers&lt;/p&gt;
                 </i>
                 <!-- ======================================================================================== -->
                 <hr>
-                    <u><strong>Bold</strong></u>
-                    <br><br>
+                <br>
+                    <u><h2 align = "center">Bold</h2></u>
+                    <br>
                     
                     To bold text, use the <strong>&lt;strong&gt;</strong> or <strong>&lt;b&gt;</strong> tags:<br>
                     <b>&lt;strong&gt;</b>Bold Text Here<b>&lt;/strong&gt;</b><br>
@@ -460,7 +461,98 @@ spaces will     be removed by browsers&lt;/p&gt;
                 
                <b> &lt;b&gt;</b> indicates no such importance and simply
                 represents text that should be bolded.
+                <hr>
+                <!-- ======================================================== -->
+                <br>
+                <h2 align = "center"><u>Italic</u></h2>
+                <br><br>
+                To italicize text, use the <b>&lt;em&gt;</b> or <b>&lt;i&gt</b>; tags:
+                <br><br>
+
+                <b>&lt;em&gt;</b>Italicized Text Here<b>&lt;/em&gt;</b>
+                <br>
+                or
+                <br>
+                <b>&lt;i&gt;</b>Italicized Text Here<b>&lt;/i&gt;</b>
+                <br><br><br><br>
+                What’s the difference? <b>Semantics.</b>
+                <br><br>
+                <b>&lt;em&gt;</b> 
+                <em>
+                    is used to indicate that the text should
+                    have extra emphasis that should be Stressed.
+                </em>
+                <br><br>
+                <b>&lt;i&gt;</b> 
+                <i>
+                    simply represents text which should be set
+                    off from the normal text around it.
+                </i>
+                <br><br><br>
+                For example, if you wanted to stress the action inside a
+                sentence, one might do so by emphasizing it in italics via
+                &lt;em&gt;: "Would you just <em>submit</em> the edit already?“
+                <br><br>
+                But if you were identifying a book or newspaper that you
+                would normally italicize stylistically, you would simply use
+                &lt;i&gt;: "I was forced to read <i>Romeo and Juliet</i> in high school.
+                <hr><br>
+                <!-- ============================================================== -->
+                <h2 align = "center"><u>Underlined</u></h2>
+                <br>
+                While the <b>&lt;u&gt;</b> element itself was deprecated in HTML 4, it
+                was reintroduced with alternate semantic meaning in HTML
+                5 - to represent an unarticulated, non-textual annotation.
+                You might use such a rendering to indicate misspelled text
+                on the page, or for a Chinese proper name mark.
+                &lt;p&gt;This paragraph contains some <b>&lt;u&gt;</b>mispelled<b>&lt;/u&gt;</b>
+                text.&lt;/p&gt;
+                <hr><br>
+                <!-- ===================================================== -->
+                <h2 align = "center"><u>Abbreviation</u></h2>
+                <br>
+                To mark some expression as an abbreviation, use
+                <b>&lt;abbr&gt;</b> tag:
                 
+                &lt;p&gt;I like to write 
+                <b>
+                    &lt;abbr title="Hypertext Markup
+                    Language"&gt;
+                </b>
+                HTML<b>&lt;/abbr&gt;</b>!&lt;/p&gt;
+
+                If present, the title attribute is used to present the full
+                description of such abbreviation
+                <hr><br>
+                <!-- ======================================================= -->
+                <h2 align = "center"><u>Inserted, Deleted, or Stricken</u></h2>
+                <br>
+                To mark text as inserted, use the <b>&lt;ins> </b>tag:
+
+                <b>&lt;ins></b>New Text<b>&lt;/ins></b>
+                
+                To mark text as deleted, use the <b>&lt;del></b> tag:
+                
+                <b>&lt;del></b>Deleted Text<b>&lt;/del></b>
+                
+                To strike through text, use the <b>&lt;s></b> tag:
+                
+                <b>&lt;s></b>Struck-through text here<b>&lt;/s></b>
+
+                <hr><br>
+                <!-- ============================================================= -->
+                <h2 align = "center"><u>Superscript and Subscript</u></h2>
+                <br>
+                To offset text either upward or downward you can use the
+                tags <b>&lt;sup></b> and <b>&lt;sub>.</b>
+                <br><br>
+                To create superscript:
+                <br>
+                <u>&lt;sup>superscript here&lt;/sup></u>
+                <br><br>
+                To create subscript:
+                <br>
+                &lt;sub>subscript here&lt;/sub>
             </p>
             <br><br>
             <a href = "#tableContents">Back to table of contents</a>
@@ -604,8 +696,10 @@ spaces will     be removed by browsers&lt;/p&gt;
                     document, often within table of contents or
                     even launch external applications.
                 </p>
+                <hr>
+                <!-- =========================================================== -->
                 <p>
-                    <h2 align = "center">6.1 Link to another site</h2> 
+                    <h2 align = "center"><u>6.1 Link to another site</u></h2> 
                     
                     This is the basic use of the &lt;a&gt; (anchor
                     element) element:
@@ -619,10 +713,13 @@ spaces will     be removed by browsers&lt;/p&gt;
                     
                     the anchor text "Link to example.com". It would look
                     something like the following:
-                    
+                    <br><br>
                     <a href="http://example.com/" target="_blank">Link to
                         example.com</a>
-                        
+                    
+
+
+                    
                     </p>
                     <br><br>
                     <a href = "#tableContents">Back to table of contents</a>
@@ -678,7 +775,7 @@ spaces will     be removed by browsers&lt;/p&gt;
     </tr>
     <tr bgcolor = "#000000">
             <td>
-                <img src = "data:image/png;base64,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" alt = "source" width="200px" height = 75px">
+                <img src = "data:image/png;base64,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" alt = "source" width="200px" height = 75px">
             <pre><strong> 
                 Source:
                 
