@@ -405,34 +405,60 @@ spaces will     be removed by browsers&lt;/p&gt;
                 formatting such as highlighting, bolding,
                 underlining, subscript, and stricken text.<br><br>
                 
-                <b>Highlighting</b><br><br>
+                <u><b>Highlighting</b></u><br><br>
                 
-                The <b>&lt;mark&gt;</b> element is new in HTML5 and is
-                used to mark or highlight text in a document
-                "due to its relevance in another context".<br><br>
+                <i>
+                    The <b>&lt;mark&gt;</b> element is new in HTML5 and is
+                    used to mark or highlight text in a document
+                    "due to its relevance in another context".
                 
-                <i><b>Output:</b></i><br><br>
-                <img src = "data:image/png;base64,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" alt="mark picture">
+                <br><br>
+                
+                The most common example would be in the results of
+                a search were the user has entered a search query
+                and results are shown highlighting the desired query.
+                    <br><br>
+                &lt;p&gt;Here is some content from an article that contains
+                the &lt;mark&gt;searched query&lt;/mark&gt; that we are
+                looking for. Highlighting the text will make it easier for
+                the user to find what they are looking for.&lt;/p&gt;
+
+
+                <br><br>
+                <b>Output:</b>
+                <br>
+                <!-- ================================================================================= -->
+                <hr>
+                </i>
+                <p>Here is some content from an article that contains
+                    the <mark>searched query</mark> that we are
+                    looking for. Highlighting the text will make it easier for
+                    the user to find what they are looking for.
+                </p>
+                <hr>
+                <!-- =========================================================================================== -->
                 <br>
                 <i>
                     A common standard formatting is <mark>black text on a
                         yellow background,</mark> but this can be changed with CSS.<br><br>
-                    </i>
+                </i>
+                <!-- ======================================================================================== -->
+                <hr>
+                    <u><strong>Bold</strong></u>
+                    <br><br>
                     
-                    <b>Bold</b><br><br>
-                    
-                    To bold text, use the &lt;strong&gt; or &lt;b&gt; tags:<br>
-                    &lt;strong&gt;Bold Text Here&lt;/strong&gt;<br>
+                    To bold text, use the <strong>&lt;strong&gt;</strong> or <strong>&lt;b&gt;</strong> tags:<br>
+                    <b>&lt;strong&gt;</b>Bold Text Here<b>&lt;/strong&gt;</b><br>
                 or<br>
-                &lt;b&gt;Bold Text Here&lt;/b&gt;<br>
+                <b>&lt;b&gt;</b>Bold Text Here<b>&lt;/b&gt;</b><br>
                 
-                What is the difference? <b>Semantics.</b><br><br>
+                What is the difference? <strong>Semantics.</strong><br><br>
                 
-                &lt;strong&gt; is used to indicate that the text is
+                <b>&lt;strong&gt;</b> is used to indicate that the text is
                 fundamentally or semantically important to the
                 surrounding text.<br>
                 
-                &lt;b&gt; indicates no such importance and simply
+               <b> &lt;b&gt;</b> indicates no such importance and simply
                 represents text that should be bolded.
                 
             </p>
