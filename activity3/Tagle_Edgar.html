@@ -16,12 +16,14 @@
 	{
 		text-align: left;
 		
+		
 	}
 	th,td 
 	{
-		padding: 50px;
+		padding: 20px;
 		
 	}
+	/*remove this generic names*/
 	.avatar
 	{
 		border-radius: 50%;
@@ -40,13 +42,6 @@
 		background-color: #121212;
 	}
 
-	.center 
-	{
-		margin-left: auto;
-		margin-right: auto;
-		display: inline-block;
-		margin: 0px;
-	}
 	.image-background
 	{
 		background-image: url(profile-background.gif);
@@ -54,17 +49,33 @@
 	}
 	.header 
 	{
-		text-align: center
+		text-align: center;
+		background-color: green;
 	}
-	#border, #border th, #border td
+	.border
 	{
-		border: 1px solid white;
+		border: 10px ridge white;
 	}
 	img 
 	{
 		margin: 10px;
 	}
+	.center 
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border: 10px ridge white;
+	}
 
+	.border img 
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 220px;
+		height: 250px;
+	}
 </style>
 <head>
 	<title>Profile</title>
@@ -84,7 +95,7 @@ other information in a paragraph
 6 photos to make it a gallery
 -->
 
-=======================================================================================================================================================================================<br><br>
+================================================================================
 
 <div id = aries>
 	
@@ -95,101 +106,128 @@ other information in a paragraph
 	</h1>
 	<h1 class = name> Tagle, Aries Joseph V. </h1>
 	<hr>
-		<table class = "center">
+		<table class = "center" >
 			<tr>
-			<th>€ Age</th>
-			<td>21</td>
+				<th colspan="3" class="header">Information</th>
 			</tr>
 			<tr>
-			<th>† Birthday</th>
-			<td>February 15</td>
+			<th class = "border">€ Age</th>
+			<td class = "border" colspan =2>21</td>
 			</tr>
 			<tr>
-				<th>‰ Address</th>
-				<td>San Fernando</td>
+			<th class = "border">† Birthday</th>
+			<td class = "border" colspan =2>February 15</td>
 			</tr>
 			<tr>
-			<th>‡ Contact number</th>
-			<td>09888888888</td>
+				<th class = "border">‰ Address</th>
+				<td class = "border" colspan =2>San Fernando</td>
 			</tr>
 			<tr>
-			<th>‰ Email address</th>
-			<td>aries@gmail.com</td>
+			<th class = "border">‡ Contact number</th>
+			<td class = "border" colspan =2>09888888888</td>
 			</tr>
 			<tr>
-			<th>Š Year</th>
-			<td>2</td>
+			<th class = "border">‰ Email address</th>
+			<td class = "border" colspan =2>aries@gmail.com</td>
 			</tr>
 			<tr>
-			<th>Œ Section</th>
-			<td>A</td>
+			<th class = "border">Š Year</th>
+			<td class = "border" colspan =2>2</td>
 			</tr>
 			<tr>
-				<th>Other Information: </th>
-				<td>I am a Computer Science student.
+			<th class = "border">Œ Section</th>
+			<td class = "border" colspan =2>A</td>
+			</tr>
+			<tr>
+				<th class = "border">Other Information: </th>
+				<td class = "border" colspan =2>I am a Computer Science student.
 					<br> Although I am may not be
-					<br> objectively handsome in your eyes,
-					<br> I still am subjectively handsome in my eyes,
-					<br> and I want a girlfriend;
-					<br> consider adding me on facebook.
+					objectively handsome in your eyes,
+					<br>I still am subjectively handsome in my eyes,
+					and I want a girlfriend;
+					<br>consider adding me on facebook.
 				</td>
 			</tr>
-		</table>
-	
-		<table class = "center" id = "border">
 			<tr>
 				<th colspan="3" class="header">Subject Enrolled</th>
 			</tr>
 			<tr>
-				<th>Subjects</th>
-				<th>Section</th>
-				<th>Units</th>
+				<th class="border">Subjects</th>
+				<th class="border">Section</th>
+				<th class="border">Units</th>
 			</tr>
 			<tr>
-				<td>Mobile Application Development</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">Mobile Application Development</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>Database Programming</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">Database Programming</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>Design Analysis and Algorithm</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">Design Analysis and Algorithm</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>System, Analysis, and Design</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">System, Analysis, and Design</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>Web Application Development</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">Web Application Development</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>Probability and Statistics</td>
-				<td>BSCS 2a</td>
-				<td>3</td>
+				<td class="border">Probability and Statistics</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">3</td>
 			</tr>
 			<tr>
-				<td>Physical Education</td>
-				<td>BSCS 2a</td>
-				<td>2</td>
+				<td class="border">Physical Education</td>
+				<td class="border">BSCS 2a</td>
+				<td class="border">2</td>
 			</tr>
 		</table>
 	<div align = "center">
+		<table class = center>
+			<tr>
+				<th class = "header" colspan="3">
+					Gallery
+				</th>
+			</tr>
+			<tr>
+				<td class = border>
+					<img src="Photo1.png" alt = "Photo 1">
 
-		<img src="Photo1.png" alt = "Photo 1" width="200px" height="240px">
-		<img src="Photo2.png" alt = "Photo 2" width="200px" height="240px">
-		<img src="Photo3.png" alt = "Photo 3" width="200px" height="240px">
+				</td>
+				<td class = border>
+					<img src="Photo2.png" alt = "Photo 2">
+
+				</td>
+				<td class = border>
+					<img src="Photo3.png" alt = "Photo 3">
+					</td>
+			</tr>
+			<tr>
+				<td class = border>
+					<img src="Photo4.png" alt = "Photo 4">
+
+				</td>
+				<td class = border>
+
+					<img src="Photo5.png" alt = "Photo 5">
+				</td>
+				<td class = border>
+
+					<img src="Photo6.png" alt = "Photo 6">
+				</td>
+			</tr>
+		</table>
 		<br>
-		<img src="Photo4.png" alt = "Photo 4" width="200px" height="240px">
-		<img src="Photo5.png" alt = "Photo 5" width="200px" height="240px">
-		<img src="Photo6.png" alt = "Photo 6" width="200px" height="240px">
 	</div>
 	
 </div>
