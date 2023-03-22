@@ -1,0 +1,59 @@
+/* PUT ALL IMAGES IN THE ASSETS FOLDER 
+AND AVOID INLINE CSS*/
+
+.
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dont remove the code from above, its for flexible screen resolution */
+
+body
+{
+    background-color: black;
+    color: white;
+}
+
+/* header title */
+.QuizTitle
+{
+
+}
+
+/* test 1 div design here */
+.test1
+{
+
+}
+
+/* test 1 paragraph below, fonts and things */
+.test1 p 
+{
+
+}
+/* test 1 input text design below if not needed just use the input{} */
+.test1 input
+{
+
+}
+
+/* test 2 div design here */
+.test2
+{
+
+}
+/* test 2 paragraph below */
+.test2 p
+{
+
+}
+/* test 2 input radio button design */
+/* if it doesnt work try replacing it with .test2 p table tr td input{} */
+.test2 input
+{
+    
+}
+
+/*use div{} for designing instead if you guys are planning to create the same design on both test
