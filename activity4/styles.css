@@ -1,59 +1,92 @@
 /* PUT ALL IMAGES IN THE ASSETS FOLDER 
 AND AVOID INLINE CSS*/
 
-.
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* dont remove the code from above, its for flexible screen resolution */
 
 body
 {
-    background-color: black;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
 }
 
-/* header title */
-.QuizTitle
-{
-
-}
-
-/* test 1 div design here */
-.test1
-{
-
-}
-
-/* test 1 paragraph below, fonts and things */
-.test1 p 
-{
-
-}
-/* test 1 input text design below if not needed just use the input{} */
-.test1 input
-{
-
-}
-
-/* test 2 div design here */
-.test2
-{
-
-}
-/* test 2 paragraph below */
-.test2 p
-{
-
-}
-/* test 2 input radio button design */
-/* if it doesnt work try replacing it with .test2 p table tr td input{} */
-.test2 input
+#wrapper
 {
     
+    margin: auto;
+    width: 80%;
+    padding: 80px;
+    background-image: url("Assets/HTML-bg.jpg");
+    background-size: cover;
+    border-radius: 1.5rem;
+
 }
+h1, h2, div
+{
+    text-align: center;
+}
+
+
+.identification
+{
+    border-top: 3px solid greenyellow;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    display: block;
+    border-radius: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 1)
+    0px 4px 16px, rgba(17,17,26,0.5)
+    0px 8px 32px;
+
+}
+
+input[type = text]
+{
+    border-radius: 1rem;
+    padding: 10px;
+    border:none;
+    border-bottom: solid 5px green;
+    width: 70%;
+}
+
+
+.multiple_choice
+{
+    border-top: 3px solid greenyellow;
+    display: block;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 1)
+    0px 4px 16px, rgba(17,17,26,0.5)
+    0px 8px 32px;
+}
+
+input[type = radio]
+{
+    display: none;
+    
+}
+input[type = radio] ~ label
+{
+    display: block;
+    border-radius: 1.5rem;
+    border: 2px solid #272B36;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background: linear-gradient(to right, rgba(0,0,0,0), #676f9d);
+    background-position: right bottom;
+    background-size: 300% 100%;
+    transition: background-position 0.5s ease-in-out;
+    color: #20232D ;
+  }
+
 
 /*use div{} for designing instead if you guys are planning to create the same design on both test
