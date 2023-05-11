@@ -53,13 +53,12 @@
         <b>Expected output: </b><br>
         <label for="name">Enter your name: </label>
         <input type="text" name="name" id="name">
-        <input type="submit" value="Submt">
     </form>
     Your name is 
     <u>
         <?php if(isset($_POST["name"]))
         {echo $_POST["name"];}
-        else {echo "        ";  }?>
+        else {echo "";  }?>
     </u>
     <hr>
     <b>Expected Output: </b><br>
